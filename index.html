@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP Sellection</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Fonts - League Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo fp">
+        <nav>
+            <!-- Ícone do menu hambúrguer -->
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- Links de navegação -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Carros</a></li>
+                <li><a href="/">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="list">
+            <div class="item active">
+                <div class="car-img">
+                    <img src="./img/1.png" alt="Porsche 911 Turbo">
+                </div>
+                <div class="content">
+                    <p class="car-information">
+                        Único Dono | 2020 | 15.000 km
+                    </p>
+                    <h2>
+                        Porsche 911 Turbo
+                    </h2>
+                    <p class="description">
+                        O Porsche 911 Turbo é a combinação perfeita de desempenho e luxo. Com um motor twin-turbo de 540
+                        cavalos, este carro oferece uma aceleração impressionante e uma dirigibilidade precisa. Este
+                        modelo é de único dono, mantido em excelente estado, com apenas 15.000 km rodados. Ideal para
+                        quem busca um carro esportivo com conforto e tecnologia de ponta.
+                    </p>
+                    <button class="information">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/2.png" alt="Ferrari Conversível">
+                </div>
+                <div class="content">
+                    <p class="car-information">
+                        Conversível | 2018 | 10.000 km
+                    </p>
+                    <h2>
+                        Ferrari 488 Spider
+                    </h2>
+                    <p class="description">
+                        A Ferrari 488 Spider é um dos carros mais desejados do mundo, combinando design elegante com
+                        desempenho excepcional. Equipada com um motor V8 biturbo de 670 cavalos, esta versão conversível
+                        oferece uma experiência de condução emocionante. Com apenas 10.000 km rodados, este carro é uma
+                        verdadeira obra de arte sobre rodas, perfeito para quem busca exclusividade e adrenalina.
+                    </p>
+                    <button class="information">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/3.png" alt="Lamborghini 2015">
+                </div>
+                <div class="content">
+                    <p class="car-information">
+                        2015 | 20.000 km
+                    </p>
+                    <h2>
+                        Lamborghini Huracán
+                    </h2>
+                    <p class="description">
+                        O Lamborghini Huracán é um supercarro que chama a atenção por onde passa. Com um design
+                        agressivo e um motor V10 de 610 cavalos, este carro oferece uma experiência de condução
+                        inigualável. Este modelo de 2015, com apenas 20.000 km rodados, é uma excelente oportunidade
+                        para adquirir um veículo que combina performance, tecnologia e estilo.
+                    </p>
+                    <button class="information">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><img src="./img/arrow.png" alt="seta esquerda"></button>
+            <button id="next"><img src="./img/arrow.png" alt="seta direita"></button>
+        </div>
+
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
