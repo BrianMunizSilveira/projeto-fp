@@ -2,11 +2,98 @@
 @media (max-width: 480px) {
     header {
         width: 90vw;
-        grid-template-columns: 1fr;
-        gap: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
         img {
             width: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+
+    section {
+        .container {
+            width: 100vw;
+            padding: 10px;
+        }
+
+        .list {
+            width: 90vw;
+
+            .item {
+                .car-img img {
+                    width: 80%;
+                }
+
+                .content {
+                    right: 10px;
+                    width: 90%;
+                    height: 100%;
+
+                    h2 {
+                        font-size: 2.5em;
+                    }
+
+                    .description {
+                        font-size: 12px;
+                        padding: 0.5rem;
+                    }
+
+                    .information {
+                        width: 100px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .indicators {
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            justify-content: center;
+
+            .number {
+                font-size: 3em;
+            }
+
+            ul {
+                justify-content: center;
+            }
+        }
+
+        .arrows {
+            width: 90vw;
+
+            button {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        img {
+            width: 200px;
         }
 
         nav ul {
@@ -20,10 +107,10 @@
 
             .item .content {
                 right: 20px;
-                width: 90%;
+                width: 80%;
 
                 h2 {
-                    font-size: 3em;
+                    font-size: 3.5em;
                 }
 
                 .description {
@@ -33,13 +120,7 @@
         }
 
         .indicators {
-            position: absolute;
-            top: 50%;
-            left: 6%;
-            transform: translate(-50%, -25px);
-            display: flex;
-            width: 10%;
-            z-index: 1;
+            display: none;
         }
 
         .arrows {
@@ -48,12 +129,12 @@
     }
 }
 
-/* Extra small devices */
-@media (min-width: 481px) and (max-width: 767px) {
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
     header {
         width: 90vw;
         grid-template-columns: 1fr 400px;
-        gap: 20%;
+        gap: 25%;
 
         img {
             width: 200px;
@@ -70,22 +151,16 @@
 
             .item .content {
                 right: 30px;
-                width: 80%;
+                width: 70%;
 
                 h2 {
                     font-size: 4em;
                 }
 
                 .description {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
             }
-        }
-
-        .indicators {
-            display: none;
-            visibility: hidden;
-            opacity: 0;
         }
 
         .arrows {
@@ -94,12 +169,12 @@
     }
 }
 
-/* Small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
     header {
         width: 90vw;
         grid-template-columns: 1fr 500px;
-        gap: 25%;
+        gap: 30%;
 
         img {
             width: 200px;
@@ -120,46 +195,6 @@
 
                 h2 {
                     font-size: 4.5em;
-                }
-
-                .description {
-                    font-size: 13px;
-                }
-            }
-        }
-
-        .arrows {
-            width: 90vw;
-        }
-    }
-}
-
-/* Large tablets/laptops */
-@media (min-width: 992px) and (max-width: 1199px) {
-    header {
-        width: 90vw;
-        grid-template-columns: 1fr 550px;
-        gap: 30%;
-
-        img {
-            width: 200px;
-        }
-
-        nav ul {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    section {
-        .list {
-            width: 90vw;
-
-            .item .content {
-                right: 50px;
-                width: 70%;
-
-                h2 {
-                    font-size: 5em;
                 }
 
                 .description {
