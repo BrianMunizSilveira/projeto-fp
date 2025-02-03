@@ -29,6 +29,10 @@
             width: 90vw;
             overflow: hidden;
 
+            &::before {
+                display: none;
+            }
+
             .item {
                 .car-img img {
                     width: 80%;
