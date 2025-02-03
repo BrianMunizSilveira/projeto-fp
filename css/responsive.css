@@ -15,6 +15,7 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
+            gap: 1rem;
         }
     }
 
@@ -26,6 +27,7 @@
 
         .list {
             width: 90vw;
+            overflow: hidden;
 
             .item {
                 .car-img img {
@@ -58,7 +60,7 @@
             top: 60%;
             left: 50%;
             transform: translateX(-50%);
-            width: 100%;
+            width: 90%;
             justify-content: center;
 
             .number {
@@ -67,11 +69,12 @@
 
             ul {
                 justify-content: center;
+                flex-direction: column;
             }
         }
 
         .arrows {
-            width: 90vw;
+            width: 100vw;
 
             button {
                 width: 40px;
